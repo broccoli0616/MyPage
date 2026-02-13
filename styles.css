@@ -1,0 +1,390 @@
+/* =========================
+   Apple-style Light Theme
+   ========================= */
+
+:root {
+  --bg: #f5f5f7;
+  --card: #ffffff;
+  --card-hover: #fafafa;
+  --text: #1d1d1f;
+  --muted: #6e6e73;
+  --line: #d2d2d7;
+  --radius: 18px;
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Base reset */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Layout */
+.container {
+  width: min(1080px, 92%);
+  margin: 0 auto;
+}
+
+/* =========================
+   Header
+   ========================= */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(245, 245, 247, 0.85);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  padding: 14px 0;
+  gap: 24px;
+}
+
+.brand {
+  font-size: 18px;
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #ffffff;
+}
+
+.icons a {
+  color: #1d1d1f;          /* icon color */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons svg {
+  width: 28px;
+  height: 28px;
+  fill: currentColor;      /* THIS makes the path show */
+}
+
+
+/* Navigation */
+.nav {
+  display: flex;
+  gap: 18px;
+  margin-left: auto;
+}
+
+.nav a {
+  font-size: 14px;
+  color: var(--muted);
+  padding: 8px 10px;
+  border-radius: 999px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav a:hover {
+  background: var(--card-hover);
+  color: var(--text);
+}
+
+/* =========================
+   Hero
+   ========================= */
+
+.hero {
+  padding: 80px 0 40px;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.hero h1 {
+  margin: 0 0 10px;
+  font-size: clamp(36px, 5vw, 56px);
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  margin: 0 0 15px;
+  color: var(--muted);
+  font-size: 17px;
+}
+
+.desc {
+  margin: 0 0 22px;
+  color: var(--muted);
+  max-width: 60ch;
+  font-size: 16px;
+}
+
+/* Social icons */
+.icons {
+  display: flex;
+  gap: 12px;
+}
+
+.icon {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #ffffff;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.icon:hover {
+  background: var(--card-hover);
+  transform: translateY(-2px);
+}
+
+.icon svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Hero image card */
+.hero-card {
+  background: #ffffff;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  padding: 18px;
+}
+
+.avatar {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: calc(var(--radius) - 6px);
+  border: 1px solid var(--line);
+}
+
+/* =========================
+   Sections
+   ========================= */
+
+.section {
+  padding: 72px 0;
+}
+
+.section h2 {
+  margin: 0 0 20px;
+  font-size: 24px;
+  letter-spacing: -0.01em;
+}
+
+/* Cards */
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  padding: 20px;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.card:hover {
+  background: var(--card-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+  margin: 0 0 8px;
+  font-size: 17px;
+}
+
+.card p {
+  margin: 0 0 10px;
+  color: var(--muted);
+}
+
+.card .meta {
+  font-size: 14px;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.card ul {
+  margin: 12px 0 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+/* Card links */
+.card-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.card-links a {
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #ffffff;
+  transition: background 0.2s ease;
+}
+
+.card-links a:hover {
+  background: var(--card-hover);
+}
+
+/* Grid & stack */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.stack {
+  display: grid;
+  gap: 16px;
+}
+
+/* Link card (articles) */
+.link-card {
+  display: block;
+}
+
+/* =========================
+   Footer
+   ========================= */
+
+.footer {
+  border-top: 1px solid var(--line);
+  padding: 36px 0 48px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: 860px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav {
+    display: none;
+  }
+}
+
+
+.project-list {
+  display: grid;
+  gap: 28px;
+}
+
+.project-row {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 26px;
+  align-items: center;
+}
+
+.project-text h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.project-one-line {
+  margin: 0;
+  color: var(--muted);
+  max-width: 72ch;
+}
+
+/* Demo/GitHub buttons */
+.project-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--text);
+  font-size: 14px;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.icon-btn:hover {
+  background: var(--card-hover);
+  transform: translateY(-1px);
+}
+
+.icon-btn svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+/* Image placeholder (leave space for a pic) */
+.project-image {
+  height: 170px;
+  border-radius: 14px;
+  background: #e5e5ea; /* Apple light gray placeholder */
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 860px) {
+  .project-row {
+    grid-template-columns: 1fr;
+  }
+  .project-image {
+    height: 200px;
+  }
+}
