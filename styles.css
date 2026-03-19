@@ -107,6 +107,33 @@ a {
   color: var(--text);
 }
 
+/* Language switcher */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.lang-sep {
+  color: var(--line);
+}
+
+.lang-link {
+  color: var(--muted);
+  transition: color 0.2s ease;
+}
+
+.lang-link:hover {
+  color: var(--text);
+}
+
+.lang-active {
+  font-weight: 600;
+  color: var(--text);
+}
+
 /* =========================
    Hero
    ========================= */
