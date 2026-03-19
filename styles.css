@@ -222,6 +222,42 @@ a {
   font-size: 17px;
 }
 
+.experience-head {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 14px;
+}
+
+.experience-main {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  min-width: 0;
+}
+
+.experience-head h3 {
+  margin: 0;
+  min-width: 0;
+}
+
+.experience-logo {
+  width: 104px;
+  height: auto;
+  max-height: 46px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.meta-inline {
+  font-size: 14px;
+  color: var(--muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
 .card p {
   margin: 0 0 10px;
   color: var(--muted);
@@ -294,6 +330,21 @@ a {
 @media (max-width: 860px) {
   .hero-inner {
     grid-template-columns: 1fr;
+  }
+
+  .experience-logo {
+    width: 88px;
+    max-height: 40px;
+  }
+
+  .experience-main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .meta-inline {
+    white-space: normal;
   }
 
   .grid {
