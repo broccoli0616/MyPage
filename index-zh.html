@@ -15,7 +15,7 @@
 
       <nav class="nav" aria-label="主导航">
         <a href="#projects">技术项目</a>
-        <a href="#product">产品管理经验</a>
+        <a href="#product">产品经验</a>
         <a href="#consulting">咨询经验</a>
         <a href="#nus">学习生活</a>
       </nav>
@@ -33,9 +33,9 @@
       <div class="container hero-inner">
         <div class="hero-text">
          <h1>张嘉眙</h1>
-<p class="subtitle">新加坡国立大学计算机系大二 • 积极的问题解决者 • 产品思维系统架构师</p>
+<p class="subtitle">新加坡国立大学计算机系大三学生 • 积极的问题解决者 • 产品思维系统构建者</p>
 <p class="desc">
-  我将复杂问题转化为精心设计的系统，从机器学习工具到自动化和全栈应用，专注于清晰性、效率和现实生活的影响。
+  我擅长将复杂问题转化为设计精良的系统，涉猎从机器学习工具到自动化流程与全栈应用，始终专注于清晰性、效率与真实世界的影响力。
 </p>
 
 
@@ -64,7 +64,7 @@
   </div> 
 
    <div class="hero-card">
-          <img class="avatar" src="assets/photo.jpg" alt="张家仪的照片" />
+          <img class="avatar" src="assets/photo.jpg" alt="张嘉眙的照片" />
         </div>
       </div>
     </section>
@@ -74,9 +74,32 @@
         <h2>学习生活</h2>
         <div class="card">
           <ul>
-            <li>计算机科学大二，辅修管理专业</li>
-            <li>相关课程：数据结构与算法、软件工程、人工智能与机器学习入门</li>
-            <li>课外经验：新加坡国立大学计算机系学生会核心成员</li>
+            <li><strong>计算机科学大三</strong>，辅修管理专业</li>
+            <li><strong>相关课程：</strong>数据结构与算法、软件工程、人工智能与机器学习入门、数据库系统</li>
+            <li>
+              <strong>教学经验：</strong>
+              <div class="cocurricular">
+                <div class="cocurricular-row">
+                  <span>人工智能与机器学习入门（CS2109S）助教</span>
+                </div>
+                <div class="cocurricular-row">
+                  <span>软件工程（CS2103T）学生导师</span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <strong>课外经验：</strong>
+              <div class="cocurricular">
+                <div class="cocurricular-row">
+                  <img class="cocurricular-logo" src="assets/NUS Students' Computing Club.png" alt="新加坡国立大学计算机学生俱乐部 logo" />
+                  <span>学生参与总监，新加坡国立大学计算机学生俱乐部</span>
+                </div>
+                <div class="cocurricular-row">
+                  <img class="cocurricular-logo" src="assets/NUS Product Club.png" alt="新加坡国立大学产品俱乐部 logo" />
+                  <span>课程执行，新加坡国立大学产品俱乐部</span>
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -85,8 +108,23 @@
     <!-- Sections -->
     <section id="product" class="section">
       <div class="container">
-        <h2>产品管理经验</h2>
+        <h2>产品经验</h2>
         <div class="stack">
+          <div class="card">
+            <div class="experience-head">
+              <img class="experience-logo" src="assets/Shopee-Logo.png" alt="Shopee logo" />
+              <div class="experience-main">
+                <h3>产品经理实习生 • Shopee</h3>
+                <span class="meta-inline">2026年5月 - 至今 • 新加坡</span>
+              </div>
+            </div>
+            <ul>
+              <li><strong>数据驱动的模型设计：</strong>通过SQL审计了30天内多个市场的Request Proof纠纷案例，发现各市场SOP覆盖率存在巨大差异（从接近0%到超过30%）；与本地运营和一线客服共同追溯根因，定位到两大系统性问题——通用模板无法覆盖各市场的特殊规则，以及合规知识散落在未同步的线下表格中。</li>
+              <li><strong>基于规则的过滤机制：</strong>将所有线下合规矩阵迁移至平台，转化为按场景条件（如退货原因、买家风险等级）和各市场特殊情况打标的结构化模板；设计了一套基于规则的预筛选层，在LLM选择前将100+个活跃模板缩减至每个案例5-10个相关候选项，在降低Token消耗和延迟的同时保留每次规则更新的完整审计记录，并提升了全部8个市场的自动判定率与处理速度。</li>
+              <li><strong>UAT与线上测试：</strong>负责8个市场线上测试的部分QA工作，用最少的测试用例和模拟数据设计出覆盖最广场景的测试方案；与工程师紧密协作排查线上问题（如纠纷上下文超出模型Token限制），并提出、讨论替代的数据管道设计方案以缩减上下文体积。</li>
+              <li><strong>系统化与界面优化：</strong>搭建了一套可复用的工作流，将人工的、跨系统的客服信息查找转化为结构化API请求，供研发团队构建自动化后端数据管道；同时负责25+项DMS界面字段优化的PRD撰写工作，覆盖8个以上市场，共同缩短了客服处理时长，并扩大了可实现全自动化的环节范围。</li>
+            </ul>
+          </div>
           <div class="card">
             <div class="experience-head">
               <img class="experience-logo" src="assets/paypal.png" alt="PayPal logo" />
@@ -96,24 +134,24 @@
               </div>
             </div>
             <ul>
-              <li>被选为六周密集产品经理培训班和并行案例竞赛的参与者，在PayPal创新实验室通过每周面对面会议实现从零到一的产品管理。</li>
-              <li>使用GAP框架发现产品痛点，识别出70%的金融机构在登陆时失去客户；通过定性研究和市场趋势分析验证了中小企业的"即兴缺口"。</li>
-              <li>设计了一个AI自适应平行登陆系统，具有动态参与引擎（收益和等待成本模拟器）和风险与收益编排引擎，以优先考虑高价值用户激活。</li>
-              <li>利用JTBD定义用户目标，应用MoSCoW优先级来确定MVP范围，平衡监管合规性和即时"投资沙盒"参与。设计了三阶段策略，并实施了影子模式和盲目质量保证协议，以减少AI自动化偏见并确保全球模型可转移性。</li>
+              <li>入选为期六周的高强度产品经理集训营及同步案例竞赛，在PayPal创新实验室通过每周线下会议实现从0到1的产品管理实战。</li>
+              <li>运用GAP框架主导用户洞察阶段，发现70%的金融机构在客户入驻环节流失客户；通过定性研究和市场趋势分析验证了中小企业存在的"动能缺口"（Momentum Gap）。</li>
+              <li>架构了一套AI自适应并行入驻系统，包含动态参与引擎（收益与等待成本模拟器）和风险与收益编排引擎，用于优先处理高价值激活场景。</li>
+              <li>运用JTBD明确用户目标，并采用MoSCoW优先级法确定MVP范围，在监管合规与即时"投资沙盒"体验之间取得平衡；设计了三阶段Beachhead市场进入策略，并引入影子模式与盲测QA机制，降低AI自动化偏见、确保模型在全球市场的可迁移性。</li>
             </ul>
           </div>
           <div class="card">
             <div class="experience-head">
               <img class="experience-logo" src="assets/fly fairly.avif" alt="Fly Fairly logo" />
               <div class="experience-main">
-                <h3>产品专家实习生 • Fly Fairly</h3>
-                <span class="meta-inline">2026年1月 - 至今 • 新加坡</span>
+                <h3>产品专家实习生 • Laters（原Fly Fairly）</h3>
+                <span class="meta-inline">2026年1月 - 2026年4月 • 新加坡</span>
               </div>
             </div>
             <ul>
-              <li>从利益相关者发现和范围确定到构建和验证，使用Next.js管理全生命周期，从事高影响力運營报告套件的端到端开发。</li>
-              <li>为工程、产品、营销和运营部门的后台生成数据报告，通过定义精确的指标和数据源来管理实时数据新鲜度和查询性能之间的技术权衡。</li>
-              <li>专注于将复杂数据源转化为可操作的指标和过滤器，以支持日常高管决策。</li>
+              <li>使用Next.js端到端开发一套高影响力的运营报表系统，负责从需求调研、范围确定到开发与验证的完整产品周期。</li>
+              <li>为工程、产品、市场和运营等后台部门搭建数据报表，通过精确定义指标与数据源，权衡实时数据新鲜度与查询性能之间的技术取舍。</li>
+              <li>专注于将复杂数据源转化为可执行的指标与筛选条件，支撑管理层的日常决策。</li>
             </ul>
           </div>
         </div>
@@ -133,8 +171,8 @@
               </div>
             </div>
             <ul>
-              <li>主导产品发现，识别Gen Z投资者的痛点，建立了基于分布式账本技术的虚构策略，将投资壁垒降低了5,000倍（从$250k降至$50）。</li>
-              <li>设计了一个API驱动框架，将复杂的ESGenome机构数据规范化为用户相关的零售影响指标，弥合了数字原住民用户的技术落差。</li>
+              <li>主导产品发现工作，识别出Z世代投资者面临的"复杂性壁垒"（Complexity Wall），并设计了一套基于分布式账本技术（DLT）的份额化策略，将机构投资门槛降低了5,000倍（从25万美元降至50美元）。</li>
+              <li>设计了一套API驱动的框架，将复杂的ESGenome机构数据规范化为贴近散户理解的影响力指标，弥合了数字原住民用户与专业机构数据之间的认知落差。</li>
             </ul>
           </div>
           <div class="card">
@@ -146,8 +184,8 @@
               </div>
             </div>
             <ul>
-              <li>被选中支持一项评估家庭计划产品品牌的私募股权尽职调查，作为现场访问临时工。</li>
-              <li>通过开发结构化数据摘要框架，使用标准化Excel模板来捕获和组织关键产品属性，包括定价、货架位置和可用性，在多个离线渠道进行初步市场研究。</li>
+              <li>作为门店走访临时人员，支持一项针对计划生育用品品牌的私募股权尽职调查项目。</li>
+              <li>使用标准化Excel模板搭建结构化数据摘要框架，在多个线下渠道开展一手市场调研，采集并整理定价、货架陈列、产品可得性等关键产品信息。</li>
             </ul>
           </div>
         </div>
@@ -239,7 +277,7 @@
       <!-- Project 3 -->
       <div class="project-row">
         <div class="project-text">
-          <h3>ai购物清单</h3>
+          <h3>shAIpping_List@NUS</h3>
           <p class="project-one-line">
             使用GPT-4o、React和PostgreSQL构建了全栈AI购物清单生成器，包含新加坡国立大学附近的精选物品。
           </p>
@@ -263,7 +301,7 @@
         </div>
 
         <div class="project-image">
-          <img src="assets/shaipping.png" alt="shAIpping_List@新加坡国立大学"/> 
+          <img src="assets/shaipping.png" alt="shAIpping_List@NUS"/>
         </div>
       </div>
 
